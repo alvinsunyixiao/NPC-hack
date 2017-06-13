@@ -9,10 +9,11 @@ using namespace std;
 
 VertexQueue::VertexQueue() {}
 
-void VertexQueue::decrement(size_t i, int dis) {
-    if (data[i]->dis <= dis)
+void VertexQueue::decrement(size_t i, Edge *e) {
+    if (data[i]->dis <= e->from->dis + e->weight)
         return;
-    data[i]->dis = dis;
+    data[i]->dis = e->from->dis + e->weight;
+    e->to->parent = e->from;
     int p = (i-1) / 2;
     while (p >= 0 && *(data[i]) < *(data[p])) {
         swap(data[i], data[p]);
@@ -23,10 +24,10 @@ void VertexQueue::decrement(size_t i, int dis) {
     }
 }
 
-void VertexQueue::insert(Vertex *v, int dis) {
-    data.push_back(v);
-    v->queue_idx = data.size() - 1;
-    decrement(data.size()-1, dis);
+void VertexQueue::insert(Edge *e) {
+    data.push_back(e->to);
+    e->to->queue_idx = data.size() - 1;
+    decrement(data.size()-1, e);
 }
 
 void VertexQueue::display() {

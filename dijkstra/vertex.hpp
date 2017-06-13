@@ -17,13 +17,14 @@ class Vertex {
 public:
     string          label;
     bool            marked;
-    int             dis;
+    double          dis;
     int             queue_idx;
-    Position        pos;
+    Position        *pos;
     Vertex          *parent;
     vector<Edge*>   target;
 
-    Vertex(int x, int y, string label);
+    Vertex(Position *p, string label);
+    void display();
     bool operator<(Vertex &v);
     bool operator>(Vertex &v);
     friend ostream &operator<<(ostream &output, Vertex &v);

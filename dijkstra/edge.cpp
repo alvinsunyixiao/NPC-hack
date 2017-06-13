@@ -11,5 +11,5 @@ Edge::Edge(Vertex *f, Vertex *t) {
 }
 
 double Edge::calc_dis() {
-    return sqrt((from->pos.x - to->pos.x)^2 + (from->pos.y - to->pos.y)^2);
+    return sqrt(pow(from->pos->x - to->pos->x, 2) + pow(from->pos->y - to->pos->y, 2));
 }

@@ -6,7 +6,7 @@ SRCS   =  edge.cpp \
 
 OBJS   =  $(SRCS:.cpp=.o)
 CC     =  g++
-CFLAGS =  -c -Wall -Werror -Wextra
+CFLAGS =  -c -Wall -Werror -Wextra -std=c++11
 
 .PHONY: clean fclean re
 

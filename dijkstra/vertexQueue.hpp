@@ -13,8 +13,8 @@ public:
 
     VertexQueue();
     void    heapify(size_t i);
-    void    insert(Vertex *v, int dis);
-    void    decrement(size_t i, int dis);
+    void    insert(Edge *e);
+    void    decrement(size_t i, Edge *e);
     void    display();
     size_t  size();
     Vertex* pop_front();
