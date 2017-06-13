@@ -43,7 +43,7 @@ int main(int argc, char *argv[]) {
     layout["Pine"] = 3;
     layout["MaidenhairTree"] = 4;
     layout["Birch"] = 5;
-    layout["Poplar"] = 6;
+    layout["Polar"] = 6;
 
     vector<Position> buf[7];
 
