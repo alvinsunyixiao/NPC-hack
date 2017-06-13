@@ -11,7 +11,7 @@ public:
     Vertex  *to;
     double  weight;
 
-    Edge(Vertex *f, Vertex *t);
+    Edge(Vertex *f, Vertex *t);  //Construct an Edge instance from
     double calc_dis();
 };
 
