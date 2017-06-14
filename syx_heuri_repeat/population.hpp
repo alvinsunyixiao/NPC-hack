@@ -4,32 +4,39 @@
 #include <vector>
 #include <string>
 #include "position.hpp"
-#include "global.hpp"
 
 using namespace std;
 
 class Path {
 public:
-    int         dis;
+    double      dis;
     vector<int> arr;
 
-    Path(vector<Position> *map,
-         vector<string> &guide);
-    void    eval(vector<Position> *map, vector<string> &guide);
+    Path();
+    Path(Path *a, Path *b);
+
+    void    eval();
+    void    mutate(double rate);
     double  calc_dis(Position &a, Position &b);
 
 };
 
 class Population {
 public:
-    int             SIZE;
+    size_t          SIZE;
     int             epoch;
+    double          min_dis;
+    double          max_dis;
+    double          mutation_rate;
     vector<Path*>   pool;
 
-    Population(int s,
-               vector<Position> *buf,
-               vector<string> &guide);
-    double mutation_rate();
+    Population(size_t s, double mutation_rate = 0.3);
+
+    void            survive();
+    void            fill();
+    void            mutate();
+    size_t          size();
+    void            evolve();
 };
 
 #endif

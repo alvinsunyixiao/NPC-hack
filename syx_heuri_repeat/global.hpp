@@ -3,7 +3,13 @@
 
 #include <map>
 #include <string>
+#include <vector>
+#include "position.hpp"
 
-std::map<std::string, int> layout;
+extern const double inf;
+
+extern std::map<std::string, int>  layout;
+extern std::vector<Position>       nodes[7];
+extern std::vector<std::string>    guide;
 
 #endif

@@ -9,13 +9,20 @@
 #include <cmath>
 #include <ctime>
 
-#include "position.hpp"
 #include "global.hpp"
+#include "position.hpp"
+#include "population.hpp"
 
 #define random(x) (rand()%x)
 
 using namespace std;
 
+
+std::map<std::string, int>  layout;
+std::vector<Position>       nodes[7];
+std::vector<std::string>    guide;
+
+const double inf = 1e40;
 
 double dis(Position &a, Position &b) {
     return sqrt(pow(a.x-b.x, 2) + pow(a.y-b.y, 2));
@@ -36,9 +43,8 @@ int main(int argc, char *argv[]) {
     layout["Pine"] = 3;
     layout["MaidenhairTree"] = 4;
     layout["Birch"] = 5;
-    layout["Poplar"] = 6;
+    layout["Polar"] = 6;
 
-    vector<Position> buf[7];
 
     ifstream map_fin(string(argv[1]) + "/map.csv");
     ifstream guide_fin(string(argv[1]) + "/guidebook.csv");
@@ -56,7 +62,7 @@ int main(int argc, char *argv[]) {
         getline(ss, l, ',');
         l.pop_back();
         cout << x << ' ' << y << ' ' << l << endl;
-        buf[layout[l]].push_back({x, y, l});
+        nodes[layout[l]].push_back({x, y, l});
     }
 
     while (getline(guide_fin, tmp, ',')) {
@@ -64,6 +70,14 @@ int main(int argc, char *argv[]) {
             tmp.pop_back();
             tmp.pop_back();
         }
+        guide.push_back(tmp);
+    }
+
+
+    Population P(1000, 0.01);
+
+    for (int i=0; i<10000; i++) {
+        P.evolve();
     }
 
     return 0;
