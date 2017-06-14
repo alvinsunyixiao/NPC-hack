@@ -1,0 +1,4 @@
+https://en.wikipedia.org/wiki/Travelling_salesman_problem
+
+The code is a pre-release judge, which will be used for evaluation.
+This code is written in python, but it can be applied to .exe, .jar, and .py.
