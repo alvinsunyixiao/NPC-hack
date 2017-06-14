@@ -94,14 +94,17 @@ void Population::survive() {
         if (pool[i]->dis > max_dis)
             max_dis = pool[i]->dis;
     }
-    SIZE = pool.size();
     for (size_t i=0; i<pool.size(); i++) {
-        survival_rate = (max_dis-pool[i]->dis)/(max_dis-min_dis);
-        survival_rate = pow(survival_rate, 5);
+        if (max_dis == min_dis)
+            survival_rate = 1;
+        else
+            survival_rate = (max_dis-pool[i]->dis)/(max_dis-min_dis);
+        survival_rate = pow(survival_rate, 1);
         if (!pass(survival_rate)) {
             delete pool[i];
             swap(pool[i], pool.back());
             pool.pop_back();
+            i--;
         }
     }
     /*
@@ -115,7 +118,7 @@ void Population::survive() {
 
 void Population::fill() {
     size_t old_size = size();
-    for (size_t i=0; i<old_size; i++){
+    while (pool.size() < SIZE) {
         int idx1 = rand() % old_size;
         int idx2 = rand() % old_size;
         while (idx1 == idx2) {
@@ -128,13 +131,14 @@ void Population::fill() {
 
 void Population::mutate() {
     for (size_t i=0; i<pool.size(); i++) {
-        pool[i]->mutate(mutation_rate);
+        if (pool[i]->dis != min_dis)
+            pool[i]->mutate(mutation_rate);
     }
 }
 
 void Population::evolve() {
     survive();
-    printf("Epoch: %d Min Distance: %.3f Survived: %.2f Size: %zu\n", epoch, min_dis, pool.size()*1.0/ SIZE, size());
+    printf("Epoch: %d Min Distance: %.3f Survived: %.2f Size: %zu\n", epoch, min_dis, pool.size()*1.0/ SIZE, SIZE);
     //mutation_rate = pow(pool.size()*1.0/SIZE, 10);
     fill();
     mutate();
