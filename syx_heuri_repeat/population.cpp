@@ -55,9 +55,9 @@ void Path::eval() {
 }
 
 void Path::mutate(double rate) {
-    for (size_t i=0; i<arr.size(); i++)
-        if (pass(rate))
-            arr[i] = (int)(rand()%nodes[layout[guide[i]]].size());
+    size_t idx = rand() % arr.size();
+    if (pass(rate))
+        arr[idx] = (int)(rand()%nodes[layout[guide[idx]]].size());
     eval();
 }
 
@@ -94,13 +94,14 @@ void Population::survive() {
         if (pool[i]->dis > max_dis)
             max_dis = pool[i]->dis;
     }
+    if (min_dis == max_dis) {
+        mutate();
+        return;
+    }
     for (size_t i=0; i<pool.size(); i++) {
-        if (max_dis == min_dis)
-            survival_rate = 1;
-        else
-            survival_rate = (max_dis-pool[i]->dis)/(max_dis-min_dis);
-        survival_rate = pow(survival_rate, 1);
-        if (!pass(survival_rate)) {
+        survival_rate = (max_dis-pool[i]->dis)/(max_dis-min_dis);
+        survival_rate = pow(survival_rate, 2);
+        if (!pass(survival_rate) && size() >= 2) {
             delete pool[i];
             swap(pool[i], pool.back());
             pool.pop_back();
@@ -125,14 +126,14 @@ void Population::fill() {
             idx2 = rand() % old_size;
         }
         pool.push_back(new Path(pool[idx1], pool[idx2]));
-        //pool.back()->mutate(mutation_rate);
+        if (pool.back()->dis >= min_dis)
+            pool.back()->mutate(mutation_rate);
     }
 }
 
 void Population::mutate() {
-    for (size_t i=0; i<pool.size(); i++) {
-        if (pool[i]->dis != min_dis)
-            pool[i]->mutate(mutation_rate);
+    for (size_t i=1; i<pool.size(); i++) {
+        pool[i]->mutate(mutation_rate);
     }
 }
 
@@ -141,6 +142,6 @@ void Population::evolve() {
     printf("Epoch: %d Min Distance: %.3f Survived: %.2f Size: %zu\n", epoch, min_dis, pool.size()*1.0/ SIZE, SIZE);
     //mutation_rate = pow(pool.size()*1.0/SIZE, 10);
     fill();
-    mutate();
+    //mutate();
     epoch++;
 }

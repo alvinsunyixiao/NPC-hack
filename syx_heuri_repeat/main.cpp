@@ -74,7 +74,7 @@ int main(int argc, char *argv[]) {
     }
 
 
-    Population P(1000, 0.01);
+    Population P(200, 0.7);
 
     for (int i=0; i<10000; i++) {
         P.evolve();
