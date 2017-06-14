@@ -4,6 +4,7 @@
 #include <cstring>
 #include <map>
 #include <cmath>
+//#include <ctime>
 using namespace std;
 const int nmax = 2048;
 const double inf = 1e40;
@@ -19,7 +20,14 @@ struct Position
 	}
 } T[nmax];
 
-int n, step[nmax], sn;
+int n, step[nmax], sn, bcnt[8], bucket[8][nmax];
+int f[nmax][nmax], route[nmax], end;
+double d[nmax][nmax], mn_d = inf, dist[nmax][nmax];
+
+double dis(Position &a, Position &b)
+{
+	return sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
+}
 
 void init()
 {
@@ -49,37 +57,42 @@ void init()
 		name[i] = 0;
 		step[++sn] = m[name];
 	}
+	
+	for (int i = 1; i <= n; i++)
+		for (int j = 1; j <= n; j++)
+			dist[i][j] = dis(T[i], T[j]);
+	
+	for (int i = 1; i <= n; i++)
+		bucket[T[i].c][++bcnt[T[i].c]] = i;
 }
 
-double dis(Position &a, Position &b)
-{
-	return sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
-}
-
-int f[nmax][nmax], route[nmax], end;
-double d[nmax][nmax], mn_d = inf;
 void DP()
 {
-	int i, j, k;
+	int i, j, k, x, y;
 	for (i = 0; i <= sn; i++)
 		for (j = 0; j <= n; j++)
 			d[i][j] = inf;
 	
 	for (j = 1; j <= n; j++)
-		f[1][j] = 0,
-		d[1][j] = dis(T[0], T[j]);
+		d[1][j] = dis(T[0], T[j]),
+		f[1][j] = 0;
 	for (i = 2; i <= sn; i++)
-		for (j = 1; j <= n; j++)
-			if (step[i] == T[j].c)
-				for (k = 1; k <= n; k++)
-					if (step[i - 1] == T[k].c && d[i][j] > d[i - 1][k] + dis(T[j], T[k]))
-						f[i][j] = k,
-						d[i][j] = d[i - 1][k] + dis(T[j], T[k]);
+		for (x = 1; x <= bcnt[step[i]]; x++)
+		{
+			j = bucket[step[i]][x];
+			for (y = 1; y <= bcnt[step[i - 1]]; y++)
+			{
+				k = bucket[step[i - 1]][y];
+				if (d[i][j] > d[i - 1][k] + dist[j][k])
+					d[i][j] = d[i - 1][k] + dist[j][k],
+					f[i][j] = k;
+			}
+		}
 	
 	for (j = 1; j <= n; j++)
 		if (step[sn] == T[j].c && mn_d > d[sn][j])
-			end = j,
-			mn_d = d[sn][j];
+			mn_d = d[sn][j],
+			end = j;
 }
 
 void output()
@@ -87,7 +100,7 @@ void output()
 	string str[8] = {"", "Cedar", "PlaneTree", "Palm", "Pine", "MaidenhairTree", "Birch", "Polar"};
 	char name[20], file[50];
 	
-	sprintf(file, "solution-%d.csv", int(mn_d + 0.5));
+	sprintf(file, "1-solution-%d.csv", int(mn_d + 0.5));
 	FILE *out = fopen(file, "w");
 	int t = end;
 	for (int i = sn; i; t = f[i--][t])
@@ -102,8 +115,11 @@ void output()
 
 int main()
 {
+	//int t = clock();
 	init();
 	DP();
 	output();
+	//printf("%d\n", clock() - t);
+	//getchar();
 	return 0;
 }
