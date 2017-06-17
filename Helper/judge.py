@@ -5,32 +5,36 @@ import shutil
 import csv
 import subprocess
 import time
+import sys
 
 questionNo=input("Question Number: ")
 log=open("log.txt","a")
 
 programs=[]
-for i in os.listdir():
-    if (i[-3:]==".py" and i!="judge.py") or i[-4:]==".exe" or i[-4:]==".jar":
-        programs.append(i)
-
 directory=os.getcwd()
+if len(sys.argv) == 2 and os.path.isdir(sys.argv[1]):
+    directory = os.path.abspath(sys.argv[1])
+
+for i in os.listdir(directory):
+    if (i[-3:]==".py" and i!="judge.py") or i[-4:]==".exe" or i[-4:]==".jar":
+        programs.append(os.path.join(directory, i))
+
 
 maps=[]
 guidebooks=[]
 nights=[None for i in range(100)]
 
-for i in os.listdir():
+for i in os.listdir(directory):
     if i[-6:]=="-night":
         nights[int(i[:-8])]=i
 
 for i in nights:
     if i!=None:
-        maps.append(directory+"\\"+i+"\\map.csv")
-        guidebooks.append(directory+"\\"+i+"\\guidebook.csv")
-    
+        maps.append(os.path.join(directory, i, 'map.csv'))
+        guidebooks.append(os.path.join(directory, i, "guidebook.csv"))
+
 def CalculateDistance(Location1,Location2):
-    Distance=((int(Location1[0])-int(Location2[0]))**2+(int(Location1[1])-int(Location2[1]))**2)**0.5 
+    Distance=((int(Location1[0])-int(Location2[0]))**2+(int(Location1[1])-int(Location2[1]))**2)**0.5
     return Distance
 
 def readInfo():
@@ -59,7 +63,7 @@ def checkValid(solution,solutionFile):
             if row not in mapList:
                 allExist=False
         except:log.write(str(datetime.datetime.now())+" #Caution: Irrelevant content found in solution file created by "+eachProgram+"\n")
-            
+
     if int(distance)==int(solutionFile[9:-4]) or int(distance)+1==int(solutionFile[9:-4]):
         valid="Valid"
     else: valid="Invalid"
@@ -78,9 +82,9 @@ def checkDuplicate(valid,trees):
             valid="Invalid"
         usedTree.append(row)
     return valid
-        
+
 def judgeSolution():
-    for i in os.listdir():
+    for i in os.listdir(directory):
         if i[:8]=="solution" and i[-4:]==".csv":
             solutionFile=i
     try:
@@ -95,10 +99,10 @@ def judgeSolution():
         log.write(str(datetime.datetime.now())+" !WARNING!: An error occured when judging the result of "+eachProgram+"\n")
 
 def removeSolutions():
-    for i in os.listdir():
+    for i in os.listdir(directory):
         if i[:8]=="solution" and i[-4:]==".csv":
             os.remove(i)
-    
+
 def startProcess(program):
     child=subprocess.Popen(program,shell=True)
     try: child.wait(3600)
@@ -106,7 +110,7 @@ def startProcess(program):
         subprocess.Popen("TASKKILL /F /PID {pid} /T".format(pid=child.pid))
         log.write(str(datetime.datetime.now())+" !WARNING!: "+program+" terminated after time limit exceeded\n")
         time.sleep(1)
-     
+
 
 def testProgram(program):
     for i in range(len(maps)):
@@ -132,7 +136,7 @@ def testProgram(program):
         else:dataBase.write(i+"\n")
     dataBase.write("\n")
     dataBase.close()
-    
+
 for eachProgram in programs:
     log.write(str(datetime.datetime.now())+" log: Judging started for "+eachProgram+"\n")
     result=[]

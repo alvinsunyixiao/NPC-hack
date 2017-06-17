@@ -119,7 +119,7 @@ void output()
     string str[8] = {"", "Cedar", "PlaneTree", "Palm", "Pine", "MaidenhairTree", "Birch", "Polar"};
     char name[20], file[50];
 
-    sprintf(file, "1-solution-%d.csv", int(mn_d + 0.5));
+    sprintf(file, "solution-%d.csv", int(mn_d + 0.5));
     FILE *out = fopen(file, "w");
     int t = end_idx;
     for (int i = sn; i; t = f[i--][t])
