@@ -5,6 +5,7 @@
 #include <map>
 #include <cmath>
 #include <cstdlib>
+#include <ctime>
 
 using namespace std;
 const int       nmax = 2048;                    //maximum number of trees
@@ -58,7 +59,7 @@ void init(string root = "./")
     while (fscanf(fm, "%d,%d,%s", &x, &y, name) != EOF)
         T[++n] = Position(x, y, m[name]);
 
-    fstream fg(root + "/guidebook.csv");
+    fstream fg((root + "/guidebook.csv").c_str());
     while (fg.getline(name, 100, ','))
     {
         int l = strlen(name), i;
@@ -133,11 +134,13 @@ void output()
 
 int main(int argc, char *argv[])
 {
+	int TIME = clock();
     if (argc == 1)
         init();
     else
         init(string(argv[1]));
     DP();
     output();
+    printf("%d\n", clock() - TIME);
     return 0;
 }
