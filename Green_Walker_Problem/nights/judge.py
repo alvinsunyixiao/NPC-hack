@@ -112,7 +112,6 @@ def startProcess(program):
         subprocess.Popen("TASKKILL /F /PID {pid} /T".format(pid=child.pid))
         log.write(str(datetime.datetime.now())+" !WARNING!: "+program+" terminated after time limit exceeded\n")
         time.sleep(1)
-    embed()
 
 
 def testProgram(program):

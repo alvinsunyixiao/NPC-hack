@@ -7,16 +7,9 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-
 using namespace std;
-
 const int nmax = 2048;
 const double inf = 1e40;
-
-int n, step[nmax], sn, bcnt[8], bucket[8][nmax];
-double dist[nmax][nmax];
-int gsize;
-vector<int> grid[8][32][32];
 
 struct Position
 {
@@ -39,6 +32,11 @@ bool prob(double p)
         return 0;
 }
 
+int n, step[nmax], sn, bcnt[8], bucket[8][nmax];
+double dist[nmax][nmax];
+
+int gsize;
+vector<int> grid[8][32][32];
 void neighbor_of(int t, int &tar)
 {
     int c = T[t].c, x = T[t].x / gsize, y = T[t].y / gsize, tmp = 0;
@@ -66,7 +64,7 @@ void work()
         for (j = 1; j <= bcnt[step[i]]; j++)
         {
             k = bucket[step[i]][j];
-            if (!vis[k] && mn_d > dis(T[route[i - 1]], T[k]))
+            if (mn_d > dis(T[route[i - 1]], T[k]))
                 mn_d = dis(T[route[i - 1]], T[k]),
                 mn_i = k;
         }
@@ -89,7 +87,7 @@ struct Particle
         last_id = -1;
         e_change = 0;
     }
-    void change(double tem, double alpha = 0)
+    void change(double tem)
     {
         int id = rand() % sn + 1;
         if (last_id > 1 && last_id < sn)
@@ -101,7 +99,7 @@ struct Particle
         int tar = sq[id];//bucket[T[sq[id]].c][rand() % bcnt[T[sq[id]].c] + 1];
         neighbor_of(sq[id], tar);
 
-        double delta_e = alpha * ((cnt[tar] >= 1) - (cnt[sq[id]] >= 2));
+        double delta_e = 0;
         if (id != 1)  delta_e += dist[tar][sq[id - 1]] - dist[sq[id]][sq[id - 1]];
         if (id != sn) delta_e += dist[tar][sq[id + 1]] - dist[sq[id]][sq[id + 1]];
 
@@ -186,16 +184,15 @@ void SA()
 
     //printf(" %d\n", p.validity());
 
-    double ts = 30, te = 1, last_pc = 0, pc, tot = log(ts / te), alpha = 30;
+    double ts = 30, te = 1, last_pc = 0, pc, tot = log(ts / te);
     for (double tem = ts; tem > te; tem *= 0.99999999)
     {
-        p.change(tem, alpha);
+        p.change(tem);
         pc = log(ts / tem) / tot;
         if (pc - last_pc > 0.01)
         {
             printf("%d%%. E change is %lf. len = %lf. %svalid\n", int(pc * 100), p.e_change, p.length(), p.validity() ? "" : "in");
             last_pc = pc;
-            alpha *= 2;
 
             //printf(" %d\n", p.validity());
         }

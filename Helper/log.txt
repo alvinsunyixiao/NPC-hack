@@ -1,23 +1,285 @@
-2017-06-17 15:00:38.381935 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.073836 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.082906 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.094132 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.094259 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.094270 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.094727 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.109788 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.109951 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.109963 log: Judged night2 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.110969 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.120667 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.120811 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.120822 log: Judged night3 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.121446 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.130422 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.130557 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.130576 log: Judged night4 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.131220 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.141068 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.141245 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.141256 log: Judged night5 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
-2017-06-17 15:02:13.141599 log: Judging completed for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:37.666594 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:37.675393 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:37.686736 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.026893 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.035731 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.046543 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.046843 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.046944 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.047371 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.062965 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.063413 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.063457 log: Judged night2 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.063875 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.073020 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.073722 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.073773 log: Judged night3 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.074220 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.083973 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.084502 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.084544 log: Judged night4 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.085029 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.094133 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.094514 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.094578 log: Judged night5 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:16:56.094872 log: Judging completed for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.019559 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.029110 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.040164 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.040500 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.040763 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.041225 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.056772 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.057173 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.057270 log: Judged night2 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.057725 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.067484 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.067742 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.067785 log: Judged night3 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.068339 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.078368 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.078866 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.078936 log: Judged night4 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.079558 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.089213 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.089472 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.089519 log: Judged night5 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:22:03.089716 log: Judging completed for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:26:45.498398 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:26:45.507495 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:26:45.518042 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:26:55.367000 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:26:55.367016 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:26:55.375084 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:26:55.385389 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:40:15.956200 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:40:15.965051 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:40:15.975566 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:40:21.516240 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:40:21.516295 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:40:21.524947 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:40:21.534350 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.719184 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.728270 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.738970 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.739098 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.739131 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.739619 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.754517 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.754632 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.754645 log: Judged night2 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.755133 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.760824 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.760945 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.760955 log: Judged night3 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.761635 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.770758 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.770899 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.770909 log: Judged night4 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.771390 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.780395 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.780572 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.780591 log: Judged night5 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.780837 log: Judging completed for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:08.780846 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.781354 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.790468 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.790752 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.790783 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.791253 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.800305 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.800613 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.800638 log: Judged night2 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.801240 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.810977 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.811223 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.811233 log: Judged night3 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.811799 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.821769 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.822063 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.822095 log: Judged night4 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.823516 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.834752 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.834871 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.834881 log: Judged night5 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.835150 log: Judging completed for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:08.835160 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.835607 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.850414 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.850585 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.850599 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.851143 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.861543 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.861772 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.861788 log: Judged night2 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.862316 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.872007 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.872173 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.872203 log: Judged night3 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.872826 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.878716 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.878858 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.878871 log: Judged night4 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.879393 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.890977 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.891330 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.891619 log: Judged night5 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:08.891921 log: Judging completed for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.108324 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.117138 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.128891 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.129035 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.129089 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.129568 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.144722 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.144847 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.144858 log: Judged night2 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.145300 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.154839 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.154949 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.154958 log: Judged night3 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.155548 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.165439 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.165610 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.165634 log: Judged night4 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.166257 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.175420 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.175662 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.175672 log: Judged night5 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.175925 log: Judging completed for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:41:50.175935 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.176322 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.185547 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.185717 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.185764 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.186340 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.198842 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.198959 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.198969 log: Judged night2 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.199422 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.209337 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.209448 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.209458 log: Judged night3 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.211068 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.224451 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.224591 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.224602 log: Judged night4 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.225232 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.235590 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.235732 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.235756 log: Judged night5 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.236126 log: Judging completed for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:41:50.236139 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.236662 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.253615 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.253858 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.253923 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.254651 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.263939 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.264147 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.264237 log: Judged night2 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.264969 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.274688 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.274965 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.275013 log: Judged night3 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.275459 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.285712 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.285936 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.286007 log: Judged night4 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.287365 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.298997 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.299144 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.299181 log: Judged night5 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:41:50.299597 log: Judging completed for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.057450 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.066260 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.077838 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.077966 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.078003 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.078510 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.091267 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.091494 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.091512 log: Judged night2 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.092036 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.098604 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.098727 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.098738 log: Judged night3 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.099262 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.108924 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.109068 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.109082 log: Judged night4 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.109642 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.120925 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.121068 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.121078 log: Judged night5 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.121347 log: Judging completed for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:42:30.121357 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.121808 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.132355 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.132531 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.132566 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.133138 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.142995 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.143302 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.143316 log: Judged night2 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.143972 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.154413 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.154532 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.154543 log: Judged night3 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.155128 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.175028 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.175198 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.175212 log: Judged night4 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.175920 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.189615 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.189775 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.189790 log: Judged night5 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.190072 log: Judging completed for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe
+2017-06-17 15:42:30.190088 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.190772 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.200982 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.201182 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.201212 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.201808 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.211721 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.211929 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.211962 log: Judged night2 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.212678 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.222489 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.222637 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.222666 log: Judged night3 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.223289 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.233301 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.233597 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.233664 log: Judged night4 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.234705 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.244826 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.245087 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.245128 log: Judged night5 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:42:30.245500 log: Judging completed for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe
+2017-06-17 15:43:36.478044 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:43:36.486834 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:43:36.497608 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:43:42.487842 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:43:42.487859 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:43:42.495885 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:43:42.502077 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:44:42.617350 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:44:42.626428 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:44:42.636942 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:46:26.770812 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:46:26.779894 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:46:38.157617 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:46:38.157855 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:46:38.157878 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:46:38.165809 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:47:11.489930 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:47:11.498491 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:48:32.366865 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:48:32.376426 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:49:39.271123 log: Judging started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:49:39.280129 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:50:26.608848 log: Process ended for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:50:26.608939 !WARNING!: An error occured when judging the result of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:50:26.608948 log: Judged night1 of /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe
+2017-06-17 15:50:26.617635 log: Process started for /Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe

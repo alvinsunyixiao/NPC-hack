@@ -1,0 +1,21 @@
+/Users/alvin/rdfzhack/Green_Walker_Problem/nights/M1.exe Question Number 1
+83.21051515926243 Valid 0:00:00.011716
+134.57492985169296 Valid 0:00:00.014690
+70.95528339683914 Valid 0:00:00.012163
+465.3550293017874 Valid 0:00:00.011772
+25219.76554569526 Valid 0:00:00.498052
+
+/Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2.exe Question Number 1
+93.16539563898276 Valid 0:00:38.413586
+211.5287033845998 Valid 0:00:41.130652
+288.4192014808845 Valid 0:00:48.013202
+597.1976312586143 Valid 0:01:34.194005
+42813.10289012816 Valid 0:02:37.747292
+
+/Users/alvin/rdfzhack/Green_Walker_Problem/nights/M2_exact.exe Question Number 1
+N/A
+N/A
+N/A
+N/A
+N/A
+
