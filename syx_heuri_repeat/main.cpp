@@ -44,10 +44,14 @@ int main(int argc, char *argv[]) {
     layout["MaidenhairTree"] = 4;
     layout["Birch"] = 5;
     layout["Polar"] = 6;
+    layout["Start"] = 7;
 
 
     ifstream map_fin(string(argv[1]) + "/map.csv");
     ifstream guide_fin(string(argv[1]) + "/guidebook.csv");
+
+    nodes[layout["Start"]].push_back({0, 0, "Start"});
+    guide.push_back("Start");
 
     string tmp;
     while (getline(map_fin, tmp)) {
