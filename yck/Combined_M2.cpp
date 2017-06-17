@@ -265,7 +265,7 @@ int main() {
         step[++sn] = m[name];
     }
 
-    if (sn <= Precise::nmax) {
+    if (sn < Precise::nmax) {
         Precise::DP();
         Precise::output();
     }
