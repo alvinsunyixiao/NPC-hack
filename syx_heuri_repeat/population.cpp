@@ -33,6 +33,7 @@ Path::Path() {
 
     arr.push_back(0);
     for (size_t i=1; i<guide.size(); i++) {
+        /*
         for (size_t j = 0; j < nodes[layout[guide[i]]].size(); j++)
             if (min_dis > calc_dis(nodes[layout[guide[i]]][j], nodes[layout[guide[i-1]]][prev_idx])) {
                 min_dis = calc_dis(nodes[layout[guide[i]]][j], nodes[layout[guide[i-1]]][prev_idx]);
@@ -40,8 +41,8 @@ Path::Path() {
             }
         prev_idx = min_idx;
         arr.push_back(min_idx);
-        min_dis = inf;
-        //arr.push_back((int)(rand()%nodes[layout[guide[i]]].size()));
+        min_dis = inf;*/
+        arr.push_back((int)(rand()%nodes[layout[guide[i]]].size()));
     }
     eval();
 }
@@ -119,11 +120,11 @@ void Population::survive() {
             pool.pop_back();
             i--;
         }
-    }
-*/
+    }*/
+
     sort(pool.begin(), pool.end(), path_cmp);
     min_dis = pool[0]->dis;
-    while (size() > SIZE * 0.5) {
+    while (size() > SIZE * 0.8) {
         delete pool.back();
         pool.pop_back();
     }

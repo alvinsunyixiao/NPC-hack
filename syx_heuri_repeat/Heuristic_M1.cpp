@@ -14,6 +14,7 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
+#include <algorithm>
 
 using namespace std;
 
@@ -29,6 +30,7 @@ vector<int>     grid[8][32][32];
 
 int             route[nmax];
 bool            vis[nmax];
+
 
 struct  Position {
     int x, y, c;
@@ -105,6 +107,19 @@ struct  Particle {
         e_change = 0;
     }
 
+    Particle(Particle *a, Particle *b) {
+        int cut1 = rand() % (sn + 1);
+
+        for (int i = 0; i <= n; i++)
+            cnt[i] = 0;
+        for (int i = 0; i < cut1; i++)
+            cnt[sq[i] = a->sq[i]]++;
+        for (int i = cut1; i <= sn; i++)
+            cnt[sq[i] = b->sq[i]]++;
+        last_id = 1;
+        e_change = 0;
+    }
+
     //Change a single tree from the current routine with probablity calculated from energy change and constantly decreasing temperature
     void change(double tem) {
         int id = rand() % sn + 1;
@@ -154,7 +169,88 @@ struct  Particle {
     }
 };
 
-void    init() {
+bool path_cmp(Particle *a, Particle *b) {
+    return (a->length() < b->length());
+}
+
+struct Population {
+    size_t              SIZE;
+    int                 epoch;
+    double              min_dis;
+    double              max_dis;
+    double              mutation_rate;
+    double              temperature;
+    vector<Particle*>   pool;
+
+    Population(size_t s, double mutation_rate = 0.3) {
+        this->SIZE = s;
+        this->mutation_rate = mutation_rate;
+
+        min_dis = inf;
+        max_dis = 0;
+        epoch = 0;
+        temperature = 50;
+        for (size_t i=0; i<SIZE; i++) {
+            pool.push_back(new Particle());
+        }
+    }
+
+    void    survive() {
+        double survival_rate = 1;
+        double tmp_l;
+
+        min_dis = inf;
+        max_dis = 0;
+        for (size_t i = 0; i < pool.size(); i++) {
+            tmp_l = pool[i]->length();
+            min_dis = tmp_l < min_dis ? tmp_l : min_dis;
+            max_dis = tmp_l > max_dis ? tmp_l : max_dis;
+        }
+        for (size_t i = 0; i < pool.size(); i++) {
+            if (max_dis != min_dis)
+                survival_rate = (max_dis-pool[i]->length())/(max_dis-min_dis);
+            if (!prob(survival_rate) && size() > 2) {
+                delete pool[i];
+                swap(pool[i], pool.back());
+                pool.pop_back();
+                i--;
+            }
+        }
+    }
+
+    void    fill() {
+        size_t old_size = size();
+
+        while (pool.size() < SIZE) {
+            int idx1 = rand() % old_size;
+            int idx2 = rand() % old_size;
+            while (idx1 == idx2)
+                idx2 = rand() % old_size;
+            pool.push_back(new Particle(pool[idx1], pool[idx2]));
+        }
+    }
+
+    void    mutate() {
+        sort(pool.begin(), pool.end(), path_cmp);
+        for (size_t i=pool.size() * 0.3; i<pool.size(); i++)
+            pool[i]->change(temperature);
+        temperature *= 0.9996;
+    }
+
+    size_t  size() {
+        return pool.size();
+    }
+
+    void    evolve() {
+        survive();
+        printf("Epoch: %d Min Distance: %.3f Survived: %.2f Size: %zu\n", epoch, min_dis, pool.size()*1.0/ SIZE, SIZE);
+        fill();
+        mutate();
+        epoch++;
+    }
+};
+
+void    init(string root = ".") {
     map <string, int> m;
     m["Cedar"]          = 1;
     m["PlaneTree"]      = 2;
@@ -169,11 +265,11 @@ void    init() {
 
     srand(time(0));
 
-    FILE *fm = fopen("map.csv", "r");
+    FILE *fm = fopen((root+"/map.csv").c_str(), "r");
     while (fscanf(fm, "%d,%d,%s", &x, &y, name) != EOF)
         T[++n] = Position(x, y, m[name]);
 
-    fstream fg("guidebook.csv");
+    fstream fg((root+"/guidebook.csv").c_str());
     while (fg.getline(name, 20, ',')) {
         int l = strlen(name), i;
         for (i = 0; i < l; i++)
@@ -227,24 +323,18 @@ void    output(double length) {
     }
 }
 
-int     main() {
-    init();
+int     main(int argc, char *argv[]) {
+    if (argc == 2)
+        init(argv[1]);
+    else
+        init();
 
     double min_dis = inf;
-    Particle *opt;
-    for (int t = 0; t < 1; t++) {
-        printf("%d\n", t);
-        SA();
-        if (min_dis > p.length()) {
-            min_dis = p.length();
-            opt = &p;
-        }
-    }
 
-    for (int i = 1; i <= sn; i++)
-        route[i] = opt->sq[i];
-
-    output(min_dis);
+    Population pop(200, 0.3);
+    for (int i = 0; i < 9999; i++)
+        pop.evolve();
+    //output(min_dis);
     return 0;
 }
 

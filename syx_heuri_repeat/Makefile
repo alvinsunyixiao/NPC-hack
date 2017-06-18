@@ -4,7 +4,7 @@ SRCS   =  main.cpp \
 
 OBJS   =  $(SRCS:.cpp=.o)
 CC     =  g++
-CFLAGS =  -c -Wall -Werror -Wextra -std=c++11
+CFLAGS =  -c -Wall -Wextra -std=c++11
 
 .PHONY: clean fclean re
 

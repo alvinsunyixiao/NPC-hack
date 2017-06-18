@@ -32,7 +32,7 @@ namespace Precise {
     }
 
     int f[smax][nmax], route[nmax], end_s, end_idx;
-    double d[smax][nmax], mn_d = inf;
+    double d[smax][nmax], min_dis = inf;
     void DP() {
         int s, t, i, j, k;
         for (s = 0; s < 1 << n; s++)
@@ -58,17 +58,17 @@ namespace Precise {
         for (s = 0; s < 1 << n; s++)
             if (__builtin_popcount(s) == sn)
                 for (i = 1; i <= n; i++)
-                    if (T[i].c == step[sn] && (s & (1 << i - 1)) && mn_d > d[s][i])
+                    if (T[i].c == step[sn] && (s & (1 << i - 1)) && min_dis > d[s][i])
                         end_s = s,
                         end_idx = i,
-                        mn_d = d[s][i];
+                        min_dis = d[s][i];
     }
 
     void output() {
         string str[8] = {"", "Cedar", "PlaneTree", "Palm", "Pine", "MaidenhairTree", "Birch", "Polar"};
         char name[20], file[50];
 
-        sprintf(file, "solution-%d.csv", int(mn_d + 0.5));
+        sprintf(file, "solution-%d.csv", int(min_dis + 0.5));
         FILE *out = fopen(file, "w");
         int s = end_s, t = end_idx;
         for (int i = sn; i; t = f[s][t], s ^= (1 << route[i--] - 1))
@@ -84,13 +84,13 @@ namespace Precise {
 namespace Heuristic {
     const int nmax = 2048;
 
-    double mn_d;
-    int route[nmax], mn_i;
+    double min_dis;
+    int route[nmax];
     bool vis[nmax];
 
     int bcnt[8], bucket[8][nmax];
     double dist[nmax][nmax];
-    int gsize;
+    int grid_size;
     vector<int> grid[8][32][32];
 
 
@@ -104,7 +104,7 @@ namespace Heuristic {
     }
 
     void neighbor_of(int t, int &tar) {
-        int c = T[t].c, x = T[t].x / gsize, y = T[t].y / gsize, tmp = 0;
+        int c = T[t].c, x = T[t].x / grid_size, y = T[t].y / grid_size, tmp = 0;
         for (int i = x == 0 ? 0 : x - 1; i <= x + 1; i++)
             for (int j = y == 0 ? 0 : y - 1; j <= y + 1; j++)
                 for (int k = 0; k < grid[c][i][j].size(); k++)
@@ -118,16 +118,18 @@ namespace Heuristic {
 
     void work() {
         int i, j, k;
+        int min_idx;
+
         for (i = 1; i <= sn; i++) {
-            mn_d = inf;
+            min_dis = inf;
             for (j = 1; j <= bcnt[step[i]]; j++) {
                 k = bucket[step[i]][j];
-                if (!vis[k] && mn_d > dis(T[route[i - 1]], T[k]))
-                    mn_d = dis(T[route[i - 1]], T[k]),
-                    mn_i = k;
+                if (!vis[k] && min_dis > dis(T[route[i - 1]], T[k]))
+                    min_dis = dis(T[route[i - 1]], T[k]),
+                    min_idx = k;
             }
-            route[i] = mn_i;
-            vis[mn_i] = 1;
+            route[i] = min_idx;
+            vis[min_idx] = 1;
         }
     }
 
@@ -194,9 +196,9 @@ namespace Heuristic {
         for (int i = 1; i <= n; i++)
             bucket[T[i].c][++bcnt[T[i].c]] = i;
 
-        gsize = sqrt(n) * 4;
+        grid_size = max(sqrt(n) * 4, 50.0);
         for (int i = 1; i <= n; i++)
-            grid[T[i].c][T[i].x / gsize][T[i].y / gsize].push_back(i);
+            grid[T[i].c][T[i].x / grid_size][T[i].y / grid_size].push_back(i);
     }
 
     Particle p;
@@ -272,14 +274,14 @@ int main() {
     else {
         Heuristic::init();
 
-        double mn_l = inf;
+        double min_dis = inf;
         Heuristic::Particle *opt;
 
         for (int t = 0; t < 1; t++) {
             printf("%d\n", t);
             Heuristic::SA();
-            if (mn_l > Heuristic::p.length()) {
-                mn_l = Heuristic::p.length();
+            if (min_dis > Heuristic::p.length()) {
+                min_dis = Heuristic::p.length();
                 opt = &(Heuristic::p);
             }
         }
@@ -287,7 +289,7 @@ int main() {
         for (int i = 1; i <= sn; i++)
             Heuristic::route[i] = opt->sq[i];
 
-        Heuristic::output(mn_l);
+        Heuristic::output(min_dis);
     }
     return 0;
 }
