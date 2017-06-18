@@ -27,8 +27,21 @@ bool pass(double rate) {
 }
 
 Path::Path() {
-    for (size_t i=0; i<guide.size(); i++) {
-        arr.push_back((int)(rand()%nodes[layout[guide[i]]].size()));
+    int     min_idx = 0;
+    int     prev_idx = 0;
+    double  min_dis = inf;
+
+    arr.push_back(0);
+    for (size_t i=1; i<guide.size(); i++) {
+        for (size_t j = 0; j < nodes[layout[guide[i]]].size(); j++)
+            if (min_dis > calc_dis(nodes[layout[guide[i]]][j], nodes[layout[guide[i-1]]][prev_idx])) {
+                min_dis = calc_dis(nodes[layout[guide[i]]][j], nodes[layout[guide[i-1]]][prev_idx]);
+                min_idx = j;
+            }
+        prev_idx = min_idx;
+        arr.push_back(min_idx);
+        min_dis = inf;
+        //arr.push_back((int)(rand()%nodes[layout[guide[i]]].size()));
     }
     eval();
 }
@@ -45,8 +58,7 @@ Path::Path(Path *a, Path *b) {
 }
 
 void Path::eval() {
-    Position &first = nodes[layout[guide[0]]][arr[0]];
-    dis = sqrt(first.x * first.x + first.y * first.y);
+    dis = 0;
 
     for (size_t i=1; i<guide.size(); i++) {
         dis += calc_dis(nodes[layout[guide[i]]][arr[i]],
@@ -83,7 +95,7 @@ size_t Population::size() {
 }
 
 void Population::survive() {
-    double survival_rate;
+    /*double survival_rate;
 
     min_dis = inf;
     max_dis = 0;
@@ -108,16 +120,21 @@ void Population::survive() {
             i--;
         }
     }
-    /*
+*/
     sort(pool.begin(), pool.end(), path_cmp);
     min_dis = pool[0]->dis;
     while (size() > SIZE * 0.5) {
         delete pool.back();
         pool.pop_back();
-    }*/
+    }
 }
 
 void Population::fill() {
+    while (pool.size() < SIZE * 0.6) {
+        pool.push_back(new Path());
+        if (pool.back()->dis >= min_dis)
+            pool.back()->mutate(mutation_rate);
+    }
     size_t old_size = size();
     while (pool.size() < SIZE) {
         int idx1 = rand() % old_size;

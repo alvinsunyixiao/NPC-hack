@@ -19,7 +19,7 @@ using namespace std;
 
 
 std::map<std::string, int>  layout;
-std::vector<Position>       nodes[7];
+std::vector<Position>       nodes[8];
 std::vector<std::string>    guide;
 
 const double inf = 1e40;

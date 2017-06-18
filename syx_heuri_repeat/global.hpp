@@ -9,7 +9,7 @@
 extern const double inf;
 
 extern std::map<std::string, int>  layout;
-extern std::vector<Position>       nodes[7];
+extern std::vector<Position>       nodes[8];
 extern std::vector<std::string>    guide;
 
 #endif
