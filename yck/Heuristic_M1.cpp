@@ -172,7 +172,7 @@ void init()
     for (int i = 1; i <= n; i++)
         bucket[T[i].c][++bcnt[T[i].c]] = i;
 
-    gsize = sqrt(n) * 4;
+    gsize = max(sqrt(n) * 4, 50.0);
     for (int i = 1; i <= n; i++)
         grid[T[i].c][T[i].x / gsize][T[i].y / gsize].push_back(i);
 }
@@ -191,7 +191,7 @@ void SA()
         pc = log(ts / tem) / tot;
         if (pc - last_pc > 0.01)
         {
-            printf("%d%%. E change is %lf. len = %lf. %svalid\n", int(pc * 100), p.e_change, p.length(), p.validity() ? "" : "in");
+            printf("%d%%. E change is %lf. len = %lf\n", int(pc * 100), p.e_change, p.length());
             last_pc = pc;
 
             //printf(" %d\n", p.validity());
