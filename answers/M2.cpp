@@ -1,3 +1,10 @@
+/*****************************************************************
+ *                                                               *
+ * @file:       M2.cpp                                           *
+ * @authors:    Chenkai Yu / Yixiao Sun / Yibing Du / Hongyu Li  *
+ * @date:       06/17/2017                                       *
+ *                                                               *
+ *****************************************************************/
 #include <iostream>
 #include <fstream>
 #include <cstdio>
@@ -277,7 +284,7 @@ int main() {
         double min_dis = inf;
         Heuristic::Particle *opt;
 
-        for (int t = 0; t < 1; t++) {
+        for (int t = 0; t < 3; t++) {
             printf("%d\n", t);
             Heuristic::SA();
             if (min_dis > Heuristic::p.length()) {

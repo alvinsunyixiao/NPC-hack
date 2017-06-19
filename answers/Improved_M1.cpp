@@ -1,3 +1,10 @@
+/*****************************************************************
+ *                                                               *
+ * @file:       Improved_M1.cpp                                  *
+ * @authors:    Chenkai Yu / Yixiao Sun / Yibing Du / Hongyu Li  *
+ * @date:       06/17/2017                                       *
+ *                                                               *
+ *****************************************************************/
 #include <iostream>
 #include <fstream>
 #include <cstdio>
